@@ -1,4 +1,4 @@
-🔁 **Project: Draw Circles on Canvas — Short & Structured Version**
+🔁 **Project: Draw Circles on Canvas**
 
 ---
 
