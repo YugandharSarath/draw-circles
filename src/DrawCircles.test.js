@@ -88,4 +88,4 @@ test("should disable undo/redo buttons appropriately", () => {
   fireEvent.click(undo);
   expect(undo).toBeDisabled();
   expect(redo).not.toBeDisabled();
-}); 
+});

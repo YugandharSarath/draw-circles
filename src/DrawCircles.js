@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-interface Circle {
-  x: number;
-  y: number;
-}
+const DrawCircles = () => {
+  const [circles, setCircles] = useState([]);
+  const [undoneCircles, setUndoneCircles] = useState([]);
 
-const DrawCircles: React.FC = () => {
-  const [circles, setCircles] = useState<Circle[]>([]);
-  const [undoneCircles, setUndoneCircles] = useState<Circle[]>([]);
-
-  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleClick = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const newCircle = {
       x: e.clientX - rect.left,
